@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>VPNパススルー</title>
+<link rel="stylesheet" href="../image/style.css" type="text/css">
+</head>
+<body text="black" link="#3333cc" vlink="#990099" alink="#339966" style="margin:5px 0 0 5px;">
+<TABLE width="550" id="top">
+	<tr>
+		<td class="mojil2" bgcolor="#cae4ff"><B>VPNパススルー（IPv4のみ）</B></td>
+	</tr>
+	<tr>
+		<td><table width="540">
+				<tr>
+					<td>仮想プライベートネットワーク(VPN : Virtual Private Network)接続を使用することにより、インターネットを経由して下記のようなアクセスが可能です。<br>
+						<br>
+						・LAN側のVPNクライアントからWAN側のVPNサーバへのアクセス<br>
+						・WAN側のVPNクライアントからLAN側のVPNサーバへのアクセス<br>
+						<br>
+						VPNのプロトコルには、PPTP(Point to Point Tunneling Protocol )、IPsec(IP Security)、L2TP(Layer 2 Tunneling Protocol)が使用できます。</td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><table width="550">
+				<tr>
+					
+          <td class="info"><b>＜ご注意＞ －本商品にて「IPsecパススルー通信」を行う場合－</b> 
+            <ul>
+              <li>本機能はIPv6には対応しておりません。<br>
+                <br>           
+              <li>本商品はPPTP/IPsec/L2TP対応のVPNサーバとしてのみ動作します。<br>
+                <br>           
+              <li>本商品に接続できるVPNサーバは1台のみです。<br>
+                <br>           
+              <li>1つのIPsecサーバに対して、複数セッションの通信提供はできません。<br>
+                <br>
+              <li>本商品内のLANにIPsecサーバを構築する場合は、静的IPマスカレード設定を併用する必要があります。<br>
+                <br>
+              <li>IKE(Internet Key Exchange)を使ったIPsecパススルー通信を行う場合には、静的IPマスカレード設定を併用する必要があります。<br>
+                <br>
+              <li>静的IPマスカレード設定を必要とする通信には、同時に複数台の端末を指定できません。 
+            </ul>
+          </td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="mojil2" bgcolor="#cae4ff"><B>PPTPの利用例</B></td>
+	</tr>
+	<tr>
+		<td><table width="540">
+				<tr>
+					<td> ここでは、ネットワーク上でのPPTPの利用例を示します。<br>
+						なお、IPsec、L2TPの場合でもPPTPと同じような構成で利用できます。<br>
+						<br>
+						<b>＜利用例1＞</b>では、自宅からインターネット経由で会社のネットワークにアクセスできます。<br>
+						<b>＜利用例2＞</b>では、自宅の複数のパソコンからインターネット経由でそれぞれ別のネットワークにアクセス<br>
+						できます。<br>
+						<b>＜利用例3＞</b>では、自分のネットワークに外部のパソコンからアクセスさせることができます。<br>
+						<br>
+						また、PPTP は、TCP/IPベースのデータネットワーク上にVPNを作成することによって、リモートコンピュータからプライベートサーバへのセキュリティで保護されたデータ転送を可能にします。<br>
+						<br></td>
+				</tr>
+				<tr>
+					<td class="mojil"><b>＜利用例1＞</b><br>
+						本商品に接続したPPTPクライアントからPPTPサーバに接続する<br>
+						<img src="image/34a.gif"><br>
+						<br></td>
+				</tr>
+				<tr>
+					<td class="mojil"><b>＜利用例2＞</b><br>
+						本商品に接続したPPTPクライアントからそれぞれ別のPPTPサーバに接続する<br>
+						<img src="image/34b.gif"><br>
+						<br></td>
+				</tr>
+				<tr>
+					<td class="mojil"><b>＜利用例3＞</b><br>
+						本商品に接続したPPTPサーバに接続する<br>
+						<img src="image/34c.gif"><br>
+						<br>
+						<span class="moji">本商品に接続できるPPTPサーバ/IPsecサーバは1台のみです。</span></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td><table width="550">
+				<tr>
+					<td class="info"><b>＜お知らせ＞</b>
+						<ul>
+							<li>PPTP機能またはIPsec機能のサポート状況および設定方法の詳細は、それぞれのメーカーにお問い合わせください。
+						</ul></td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="mojil2" bgcolor="#cae4ff"><B>PPTPの設定方法</B></td>
+	</tr>
+	<tr>
+		<td><table width="540">
+				<tr>
+					<td><b>＜利用例1,2＞</b>の場合と<b>＜利用例3＞ </b>の場合では、設定方法が異なります。</td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td><hr size="1" noshade></td>
+	</tr>
+	<tr>
+		<td class="mojil-list"> ■ WAN側のPPTPサーバへアクセスする場合のLAN側のPPTPクライアントの設定</td>
+	</tr>
+	<tr>
+		<td>
+      <table width="540">
+        <tr> 
+          <td> 　　(<b>＜利用例1,2＞</b>の場合)<br>
+            <br>
+            <b>＜利用例1,2＞</b>の場合、本商品に設定する必要はありません。<br>
+          </td>
+        </tr>
+      </table>
+    </td>
+	</tr>
+	<tr>
+		<td><hr size="1" noshade></td>
+	</tr>
+	<tr>
+		<td class="mojil-list"> ■ WAN側のPPTPクライアントへアクセスする場合のLAN側のPPTPサーバの設定</td>
+	</tr>
+	<tr>
+		<td><table width="540">
+				<tr>
+					<td> 　　(<b>＜利用例3＞</b>の場合)<br>
+						<br>
+            LAN側のPPTPサーバへWAN側のPPTPクライアントからアクセスする場合は、本商品へ静的IPマスカレード設定が必要です。LAN側に設置するPPTPサーバを静的IPマスカレード設定で、WAN側からアクセス可能にします。<br>
+						下記に設定手順を示します。</td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td><hr size="1" noshade></td>
+	</tr>
+	<tr>
+		<td class="mojil-list">■「Web設定」</td>
+	</tr>
+	<tr>
+		<td>
+      <table width="540">
+        <tr> 
+          <td width="0" nowrap valign="top"><b>1.</b></td>
+          <td width="100%">「詳細設定」-<b><a href="../4-w/8w_m101.html">「静的IPマスカレード設定」</a></b>を下記のように設定する</td>
+        </tr>
+        <tr> 
+          <th valign="top">2.</th>
+          <td> 対象インタフェースを選択で、接続先を選択する</td>
+        </tr>
+        <tr> 
+          <th valign="top">3.</th>
+          <td> エントリの「操作」欄の［編集］をクリックする</td>
+        </tr>
+        <tr> 
+          <th valign="top">4.</th>
+          <td>次の項目を設定し、［設定］をクリックする</td>
+        </tr>
+        <tr> 
+          <th></th>
+          <td> 
+            <table border="1" cellpadding="2" cellspacing="0">
+              <tr> 
+                <th>項目</th>
+                <th>値</th>
+              </tr>
+              <tr> 
+                <td bgcolor="#ccffff">変換対象プロトコル</td>
+                <td>TCP</td>
+              </tr>
+              <tr> 
+                <td bgcolor="#ccffff">変換対象ポート</td>
+                <td>pptp（もしくは1723）</td>
+              </tr>
+              <tr> 
+                <td bgcolor="#ccffff">宛先IPアドレス</td>
+                <td>PPTPサーバのIPアドレス</td>
+              </tr>
+              <tr> 
+                <td bgcolor="#ccffff">宛先ポート</td>
+                <td>　</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <th valign="top">5.</th>
+          <td> ［OK］をクリックする</td>
+        </tr>
+        <tr> 
+          <th valign="top">6.</th>
+          <td> ［戻る］をクリックする</td>
+        </tr>
+        <tr> 
+          <th valign="top">7.</th>
+          <td> 設定したエントリの行頭にチェックを入れる</td>
+        </tr>
+      </table>
+    </td>
+	</tr>
+	<tr>
+		<td class="mojil2" bgcolor="#cae4ff"><B>IPsecパススルーの設定方法</B></td>
+	</tr>
+	<tr>
+		<td><hr size="1" noshade></td>
+	</tr>
+	<tr>
+		<td class="mojil-list"> ■ WAN側のIPsecサーバへアクセスする場合</td>
+	</tr>
+	<tr>
+		<td><table width="540">
+				<tr>
+					<td> 本商品に設定する必要はありません。<BR>
+						IPsecクライアントの設定に関することは、それぞれのメーカーへお問い合わせください。 </td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td><hr size="1" noshade></td>
+	</tr>
+	<tr>
+		<td class="mojil-list"> ■ WAN側のIPsecクライアントへアクセスする場合</td>
+	</tr>
+	<tr>
+		<td><table width="540">
+				<tr>
+					<td> LAN側のIPsecサーバへWAN側のIPsecクライアントからアクセスする場合は、本商品へ静的NAT設定が必要です。<BR>
+						WAN側からLAN内のIPsecサーバへアクセス可能にします。
+						下記に設定手順を示します。 </td>
+				</tr>
+			</table></td>
+	</tr>
+	<tr>
+		<td><hr size="1" noshade></td>
+	</tr>
+	<tr>
+		<td class="mojil-list">■「Web設定」</td>
+	</tr>
+	<tr>
+		<td>
+      <table width="540">
+        <tr> 
+          <td nowrap valign="top"><b>1.</b></td>
+          <td width="100%">「詳細設定」-<b><a href="../4-w/8w_m101.html">「静的IPマスカレード設定」</a></b>を下記のように設定する</td>
+        </tr>
+        <tr> 
+          <th valign="top">2.</th>
+          <td> 対象インタフェースを選択で、接続先を選択する</td>
+        </tr>
+        <tr> 
+          <th valign="top">3.</th>
+          <td> エントリの「操作」欄の［編集］をクリックする</td>
+        </tr>
+        <tr> 
+          <td nowrap valign="top"><b>4.</b></td>
+          <td>次の項目を設定し、［設定］をクリックする</td>
+        </tr>
+        <tr> 
+          <th></th>
+          <td> 
+            <table border="1" cellpadding="2" cellspacing="0">
+              <tr> 
+                <th>項目</th>
+                <th>値</th>
+              </tr>
+              <tr> 
+                <td bgcolor="#ccffff">変換対象プロトコル</td>
+                <td>UDP</td>
+              </tr>
+              <tr> 
+                <td bgcolor="#ccffff">変換対象ポート</td>
+                <td>500</td>
+              </tr>
+              <tr> 
+                <td bgcolor="#ccffff">宛先IPアドレス</td>
+                <td>IPsecサーバのIPアドレス</td>
+              </tr>
+              <tr> 
+                <td bgcolor="#ccffff">宛先ポート</td>
+                <td>　</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <th valign="top">5.</th>
+          <td> ［OK］をクリックする</td>
+        </tr>
+        <tr> 
+          <th valign="top">6.</th>
+          <td> ［戻る］をクリックする</td>
+        </tr>
+        <tr> 
+          <th valign="top">7.</th>
+          <td> 設定したエントリの行頭にチェックを入れる</td>
+        </tr>
+      </table>
+    </td>
+	</tr>
+	<tr>
+		<td><hr size="1" noshade></td>
+	</tr>
+	<tr>
+		<td align="right"><a href="#top"> ↑ページのトップへ</a></td>
+	</tr>
+</TABLE>
+</body>
+</html>

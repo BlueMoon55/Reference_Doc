@@ -1,0 +1,481 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>PPPoEマルチセッション</title>
+<link rel="stylesheet" href="../image/style.css" type="text/css">
+</head>
+<body text="black" link="#3333cc" vlink="#990099" alink="#339966" style="margin:5px 0 0 5px;">
+<TABLE width="550" id="top">
+  <tr> 
+    <TD class="mojil2" bgcolor="#cae4ff"><B>PPPoEマルチセッション</B></TD>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <tr> 
+          <td> PPPoEマルチセッションとは、1つの回線で複数の接続先へ同時に接続を行う機能です。<br>
+            例えば、通常のプロバイダ接続とサービス情報サイトへの同時接続ができます。<br>
+            接続先の登録数は最大5箇所、同時接続可能セッション数は最大5箇所です。<br>
+            （同時接続数は、契約内容によって異なります。）<br>
+            <b>本機能は、当社のホームページなどでサービス内容をご確認のうえ、ご使用ください。</b></td>
+        </tr>
+        <tr> 
+          <td><img src="image/55-a.gif"></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>接続先は、メインセッション1箇所とその他のセッションを1～4箇所設定します。<br>
+            また、その他のセッションには、それぞれの「接続ルール設定」で、LAN側からWAN側へのパケット振り分けルールを設定します。<br>
+            LAN側からWAN側へのパケットのうち、上記の「接続ルール設定」で設定した条件と一致するパケットおよびその応答パケットは、その条件の一致したセッションのアカウントを使って接続します。<br>
+            上記の「接続ルール設定」で設定した条件と一致しなかったパケットおよびその応答パケットは、メインセッションとして指定されている接続先のアカウントを使って接続します。</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="550">
+        <tr> 
+          <td class="info"><b>＜お知らせ＞　－制限事項－</b> 
+            <ul>
+              <li>PPPoEマルチセッションで本商品のUPnP機能をご利用になる場合は、UPnP機能をご利用になる接続先をUPnP優先に指定してください。<br>
+                ※　本商品の初期状態では、［メインセッション］が「UPnP優先」になっています。 
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <TD class="1-r-title" bgcolor="#cae4ff"><B class="mojil2">設定方法</B></TD>
+  </tr>
+  <tr> 
+    <td class="mojil-list">■ 「Web設定」</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td valign="top"><B>1.</B></td>
+          <TD>「基本設定」-<A href="../4-w/8w_m3.html" ><B>「接続先設定（IPv4 PPPoE）」</B></A>-［接続先情報］でそれぞれの接続先を設定する</TD>
+        </TR>
+        <tr> 
+          <td valign="top"><b>2.</b></td>
+          <TD>「基本設定」-<A href="../4-w/8w_m3.html" ><B>「接続先設定（IPv4 PPPoE）」</B></A>-［接続先情報］で、「接続可」の接続先を選択する<BR>
+            ここで選択した「接続可」の接続先で、PPPoEマルチセッションを行うことができます。</TD>
+        </tr>
+        <tr> 
+          <td valign="top"><b>3.</b></td>
+          <TD>「基本設定」-<A href="../4-w/8w_m3.html" ><B>「接続先設定（IPv4 PPPoE）」</B></A>-［接続ルール設定］で、パケットの振り分けルールを設定する</TD>
+        </tr>
+        <tr> 
+          <TD colspan="2"><IMG src="image/m01_m55_01.gif" border="0"></TD>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="550">
+        <tr> 
+          <td class="info"><b>＜お知らせ＞　－制限事項－</b> 
+            <ul>
+              <li>接続ルールをドメイン名で指定した場合、そのセッションへのルーティングは、パソコンから発行されるDNSリクエストのドメイン名をみてルーティング情報を取得しています。<br>
+                そのため、本商品の設定変更などに伴って本商品を再起動した場合など、本商品内に保存されているドメイン情報がクリアされるため、該当するセッションに対する接続ができないことがあります。<br>
+                このような場合には、パソコンに割り当てられたIPアドレス、DNSアドレスを再取得、パソコンの再起動等が必要になります。</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr> 
+    <TD class="mojil2" bgcolor="#cae4ff"><B>設定例</B></TD>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" width="15"><b>1.</b></td>
+          <TD>各項目の設定を下記を参考にして選択・入力する</TD>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td class="mojil-list">■ 宛先ドメイン名</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" width="15"></td>
+          <td>宛先のドメイン名を指定します。<br>
+            例えば「www.xxx.co.jp」と指定すると、「www.xxx.co.jp」との通信時にこのセッションが使用されるようになります。<br>
+            以下のようなパターンで指定することができます。<br>
+            <br>
+            <table border="1" cellpadding="2" cellspacing="0">
+              <tr> 
+                <TH bgcolor="#ccffff" width="120">指定方法</TH>
+                <TH bgcolor="#ccffff" width="110">入力例</TH>
+                <TH bgcolor="#ccffff" width="260">意味</TH>
+              </tr>
+              <tr> 
+                <td>すべて入力</td>
+                <td>www.xxx.co.jp</td>
+                <td>www.xxx.co.jp のみ</td>
+              </tr>
+              <tr> 
+                <td>.で終了</td>
+                <td>www.xxx.</td>
+                <td>www.xxx.で始まるものすべて</td>
+              </tr>
+              <tr> 
+                <td>.または*.で開始</td>
+                <td>.xxx.co.jp</td>
+                <td>xxx.co.jpのみ または .xxx.co.jpで終わるものすべて</td>
+              </tr>
+            </table>
+          </td>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="550">
+        <tr> 
+          <td class="info"><b>＜お知らせ＞</b> 
+            <UL>
+              <LI>ドメイン名を条件に含めない場合は空白としてください。 <br>
+                <br>
+              </LI>
+              <LI>接続ルールをドメイン名で指定した場合、そのセッションへのルーティングは、パソコンから発行されるDNSリクエストのドメイン名をみてルーティング情報を取得しています。<br>
+                そのため、本商品の設定変更などに伴って本商品を再起動した場合など、本商品内に保存されているドメイン情報がクリアされるため、該当するセッションに対する接続ができないことがあります。<br>
+                このような場合には、パソコンに割り当てられたIPアドレス、DNSアドレスを再取得、パソコンの再起動等が必要になります。 </LI>
+            </UL>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td class="mojil-list">■ 宛先IPアドレス/ネットマスク</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" style="width:15;"></td>
+          <td>宛先のIP アドレスとネットマスクを指定します。<br>
+            以下のようなパターンで指定することができます。<br>
+	すべてのIPアドレスを指定する場合には「すべてのIPアドレスを条件に含める」<br>にチェックします。<br>
+            <br>
+            <table border="1" cellpadding="2" cellspacing="0">
+              <tr> 
+                <TH bgcolor="#ccffff" width="220">指定方法</TH>
+                <TH bgcolor="#ccffff" width="100">入力例</TH>
+                <TH bgcolor="#ccffff" width="180">意味</TH>
+              </tr>
+              <tr> 
+                <td>1.0.0.0～223.255.255.255のIPアドレス</td>
+                <td>1.2.3.4</td>
+                <td>1.2.3.4のみ</td>
+              </tr>
+            </table>
+          </td>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="550">
+        <tr> 
+          <td class="info"><b>＜お知らせ＞</b> 
+            <UL>
+              <LI>宛先IPアドレスとネットマスクを条件に含めない場合は空白としてください。</LI>
+            </UL>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td class="mojil-list">■ 送信元IPアドレス</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" width="15">&nbsp;</td>
+          <td>送信元のIPアドレスを指定します。<br>
+            以下のようなパターンで指定することができます。<br>
+            <br>
+            <table border="1" cellpadding="2" cellspacing="0">
+              <tr> 
+                <TH bgcolor="#ccffff" width="220">指定方法</TH>
+                <TH bgcolor="#ccffff" width="100">入力例</TH>
+                <TH bgcolor="#ccffff" width="180">意味</TH>
+              </tr>
+              <tr> 
+                <td>1.0.0.0～223.255.255.255のIPアドレス</td>
+                <td>1.2.3.4</td>
+                <td>1.2.3.4のみ</td>
+              </tr>
+            </table>
+          </td>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="550">
+        <tr> 
+          <td class="info"><b>＜お知らせ＞</b> 
+            <UL>
+              <LI>送信元IPアドレスを条件に含めない場合は空白としてください。</LI>
+            </UL>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <TR> 
+    <TD>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" width="15"><b>2.</b></td>
+          <TD> ［設定］をクリックする<br>
+            設定内容が保存されます。</TD>
+        </TR>
+      </table>
+    </TD>
+  </TR>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr> 
+    <TD class="1-r-title" bgcolor="#cae4ff"><B class="mojil2">接続/切断</B></TD>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" width="15"><b>1.</b></td>
+          <TD>接続先設定の画面で、手動でPPPoEの接続と切断を行うことができます。複数同時セッションを使用している場合は、それぞれ個別の接続先に対して操作することができます。</TD>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td class="mojil-list">■ 「Web設定」-「基本設定」-「接続先設定（IPv4 PPPoE）」で接続/切断する</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" width="30"><b>1.</b></td>
+          <TD>「基本設定」-<a href="../4-w/8w_m3.html" ><b>「接続先設定（IPv4 PPPoE）」</b></a>をクリックする<br>
+          </TD>
+        </TR>
+        <TR> 
+          <td align="right" valign="top" width="30">&nbsp;</td>
+          <TD><br>
+            <img src="image/m01_m55_02.gif"></TD>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="550">
+        <tr> 
+          <td class="info"><b>＜お知らせ＞</b> 
+            <UL>
+              <LI>接続先がPPPoE接続されていない状態の場合は、「状態」の欄に［未接続］が表示されます。</LI>
+            </UL>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" width="30"><b>2.</b></td>
+          <TD>PPPoE接続を行いたい場合、その接続先の「操作」の欄にある［接続］をクリックする<br>
+          </TD>
+        </TR>
+        <TR> 
+          <td align="right" valign="top" width="30">&nbsp;</td>
+          <TD><br>
+            <img src="image/m01_m55_04.gif"></TD>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td align="right" valign="top" width="30"><b>3.</b></td>
+          <TD>PPPoE切断を行いたい場合、その接続先の「操作」の欄にある［切断］をクリックします<br>
+          </TD>
+        </TR>
+        <TR> 
+          <td align="right" valign="top" width="30">&nbsp;</td>
+          <TD><br>
+            <img src="image/m01_m55_03.gif"></TD>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <TD class="1-r-title" bgcolor="#cae4ff"><B class="mojil2">PPPoEマルチセッションの接続動作について</B></TD>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <TR> 
+          <td> PPPoEマルチセッションは、UPnPを使用する接続先が「メインセッション」ではない場合や、接続先設定の指定方法で「送信元アドレス指定」を設定した場合などには、通常とは異なる接続動作をします。<br>
+            下記に例をあげてPPPoEマルチセッションの接続動作について説明します。</TD>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td class="mojil-list">■ 【設定例】</td>
+  </tr>
+  <tr> 
+    <td>
+      <table width="540">
+        <tr> 
+          <td align="right" valign="top" width="30">&nbsp;</td>
+          <TD>
+            <table border="1" cellpadding="2" cellspacing="0">
+              <tr> 
+                <th width="160">接続先名</th>
+                <th width="110">接続先</th>
+                <th width="60">メインセッション</th>
+                <th width="60">UPnP優先</th>
+                <th width="110">接続ルール設定</th>
+              </tr>
+              <tr> 
+                <td>［メインセッション/UPnP優先］</td>
+                <td>インターネット</td>
+                <td align="center">○</td>
+                <td align="center">○</td>
+                <td align="center">－</td>
+              </tr>
+              <tr> 
+                <td>［セッション3］</td>
+                <td>サービス情報サイト</td>
+                <td align="center">－</td>
+                <td align="center">－</td>
+                <td>宛先ドメイン名指定</td>
+              </tr>
+            </table>
+            <table>
+              <tr> 
+                <td><br>
+                  LAN側からWAN側へのパケット送信</td>
+              </tr>
+              <tr> 
+                <td class="mojil">　　↓</td>
+              </tr>
+              <tr> 
+                <td>
+                  <table border="0">
+                    <tr valign="top"> 
+                      <TD valign="top" align="right">　　・</TD>
+                      <TD width="234">「接続ルール設定」の条件に一致する場合</TD>
+                      <TD width="22">→</TD>
+                      <TD width="221">［セッション3］のアカウントで接続する<BR>
+                        <br>
+                      </TD>
+                    </tr>
+                    <tr class="moji" valign="top"> 
+                      <TD valign="top" align="right">　　・</TD>
+                      <TD width="234">「接続ルール設定」の条件に一致しない場合</TD>
+                      <TD width="22">→</TD>
+                      <TD width="221">［メインセッション/UPnP優先］のアカウントで接続する</TD>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </TD>
+        </TR>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <TD>
+      <hr size="1" noshade>
+    </TD>
+  </tr>
+  <tr> 
+    <td align="right"><a href="#top"> ↑ページのトップへ</a></td>
+  </tr>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=Shift_JIS">
+
+<title>詳細設定－静的NAT設定</title>
+<link rel="stylesheet" href="../image/style.css" type="text/css"></head>
+
+<body text="black" vlink="#990099" alink="#339966" link="#3333cc" style="margin:5px 0 0 5px;">
+
+<TABLE width="550">
+  <tr>
+    <TD class="mojil2" bgcolor="#ffff99"><B>詳細設定－静的NAT設定</B></TD>
+  </tr>
+  <tr>
+    <td> 
+      <table width="540">
+        <tr> 
+          <td> 静的NAT設定では、パケット中継時にポート番号の変換を行わない場合に設定します。ここで登録したポート番号を持つパケットについては、IPアドレスの変換のみが行われます。</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td>※「Web設定」画面に表示されているボタンについての説明は <a href="8w_mbtan.html" ><b>こちら</b></a></td>
+        </tr>
+        <tr> 
+          <td><img src="../4-w/image/shosai-4.gif"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr> 
+    <td class="mojil-list"><b>［ワンタッチ設定］</b></td>
+  </tr>
+  <tr>
+    <td>
+      <table width="540">
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>Webサーバ設定</b></font></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;</td>
+          <td> LAN側に設置したWebサーバに外部からアクセスできるようにします。<br>
+            Webサーバとして動作させる場合は、「Webサーバを外部に公開する」にチェックを入れ、Webサーバとして動作させる端末のIPアドレスを入力します。</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>FTPサーバ設定</b></font></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;</td>
+          <td> LAN側に設置したFTPサーバに外部からアクセスできるようにします。<br>
+            FTPサーバとして動作させる場合は、「FTPサーバを外部に公開する」にチェックを入れ、FTPサーバとして動作させる端末のIPアドレスを入力します。</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>簡易DMZ機能</b></font></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;</td>
+          <td> LAN側に設置した1台のIP端末に外部からのすべてのパケットを中継するようにします。<br>
+            1台のIP端末で外部からのすべてのパケットを中継させる場合は、「外部からのパケットをすべて特定ホストに中継する（簡易DMZ）」にチェックを入れ、特定ホストのIPアドレスを入力します。</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <TR> 
+          <TD class="info" colspan="3"><b>＜お知らせ＞</b>
+            <ul>
+              <LI>本商品のNATに関連したメニュー間で設定内容が競合した場合は、 ［静的IPマスカレード設定］ ＞ ［静的NAT設定］ ＞ 
+                ［ワンタッチ設定］ の順に優先して処理されます。<br>
+                <br>
+              <LI>簡易DMZを設定した場合、外部からのパケットをすべて中継するため、NAT機能によるセキュリティの効果がなくなります。外部からの不正アクセスには十分ご注意ください。 
+            </ul>
+          </TD>
+        </TR>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>［静的NATエントリ］</b></td>
+  </tr>
+  <tr> 
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td><U>＜［静的NATエントリ］で使用するものを適用にする場合＞</U></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table border="0" width="544">
+        <tbody> 
+        <tr> 
+          <td></td>
+          <td><ol><li>使用する［エントリ番号］のチェックボックスをチェックする</li>
+	  <li>［設定］をクリックする</li></ol> </td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td　height="1"></td>
+  </tr>
+  <tr> 
+    <td><U>＜［静的NATエントリ］で使用しないものを未適用にする場合＞</U></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table border="0" width="544">
+        <tbody> 
+        <tr> 
+          <td></td>
+          <td><ol><li>使用しない［エントリ番号］のチェックボックスのチェックを外す</li>
+	  <li>［設定］をクリックする</li></ol> </td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td></td>
+  </tr>
+  <tr> 
+    <td><U>＜［静的NATエントリ］を編集する場合＞</U></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table border="0" width="544">
+        <tbody> 
+        <tr> 
+          <td></td>
+          <td> 編集したいエントリの行末にある［編集］をクリックする<br>
+            「エントリ編集」の画面が表示されます。<br>
+            編集後、［設定］をクリックする </td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td><U>＜［静的NATエントリ］を削除する場合＞</U></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table border="0" width="544">
+        <tbody> 
+        <tr> 
+          <td></td>
+          <td> 削除したいエントリの行末にある［削除］をクリックする</td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr>
+    <td><!--※「Web設定」画面に表示されているボタンについての説明は <a href="8w_mbtan.html" ><b>こちら</b></a>--></td>
+  </tr>
+  <tr>
+    <td> <img src="../4-w/image/shosai-4_2.gif"></td>
+  </tr>
+  <tr>
+    <td>
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr>
+    <td> 
+      <table width="540">
+        <tr> 
+          <td colspan="2"><b>［静的NATエントリ編集］</b></td>
+        </tr>
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>有効/無効</b>（初期値：有効）</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> エントリの有効/無効を選択します。</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><font color="#00194b"><img src="../image/msize_1.gif"> 
+            <b>WAN側アドレス入力方法</b>（初期値：WAN側IPアドレス指定）</font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> WAN側IPアドレスの入力方法を選択します。<br>
+            「接続先指定」、「WAN側IPアドレス指定」から選択します。</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>接続先</b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> <font color="#339900">（上記の「WAN側アドレス入力方法」で、「接続先」を選択した場合）</font><br>
+            接続先を選択します。<br>
+            「メインセッション」、「セッション2～5」から選択します。</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><font color="#00194b"><img src="../image/msize_1.gif"> 
+            <b>WAN側IPアドレス</b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> <font color="#339900">（上記の「WAN側アドレス入力方法」で、「WAN側IPアドレス指定」を選択した場合）</font><br>
+            WAN側のIPアドレスを指定します。</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><font color="#00194b"><img src="../image/msize_1.gif"> 
+            <b>宛先アドレス</b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> LAN側端末のIPアドレスを指定します。<br>
+            WAN側に公開したいアプリケーションが実行されている端末を指定します。</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr>
+    <td align="right"><a href="#top"> ↑ページのトップへ</a></td>
+  </tr>
+</TABLE>
+</body>
+
+</html>

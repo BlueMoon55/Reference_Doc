@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=Shift_JIS">
+
+<title>詳細設定－LAN側静的ルーティング設定</title>
+<link rel="stylesheet" href="../image/style.css" type="text/css"></head>
+
+<body text="black" vlink="#990099" alink="#339966" link="#3333cc" style="margin:5px 0 0 5px;">
+
+<TABLE width="550" id="top">
+  <tr> 
+    <TD class="mojil2" bgcolor="#ffff99"><B>詳細設定－LAN側静的ルーティング設定</B></TD>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="540">
+        <tr> 
+          <td> LAN 内に他のルータが存在し、そのルータに接続されたパソコンから本商品を経由したインターネット通信を行う場合などに、あらかじめルーティングテーブルにルーティング情報の設定を行います。</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+  <tr>
+    <td>※「Web設定」画面に表示されているボタンについての説明は <a href="8w_mbtan.html" ><b>こちら</b></a></td>
+  </tr>
+        <tr> 
+          <td> <img src="../4-w/image/shosai-5.gif"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="540">
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>宛先IPアドレス／ネットマスク</b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> 宛先IPアドレス／ネットマスクを入力します。<br>
+            マスク長とはマスクのビット数を表したもので、例えば255.255.255.0 のマスク長は「24」となります。</td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>ゲートウェイ</b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> 宛先へのゲートウェイアドレスを入力します。</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>［LAN側静的ルーティングエントリ］</b></td>
+  </tr>
+  <tr> 
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td><U>＜エントリを編集する場合＞</U></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table border="0" width="544">
+        <tbody> 
+        <tr> 
+          <td></td>
+          <td> 編集したいエントリの行末にある［編集］をクリックする<br>
+            「エントリ編集」の画面が表示されます。<br>
+            編集後、［設定］をクリックする </td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td>　</td>
+  </tr>
+  <tr> 
+    <td><U>＜エントリを削除する場合＞</U></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table border="0" width="544">
+        <tbody> 
+        <tr> 
+          <td></td>
+          <td> 削除したいエントリの行末にある［削除］をクリックする</td>
+        </tr>
+        </tbody> 
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr>
+    <td><!--※「Web設定」画面に表示されているボタンについての説明は <a href="8w_mbtan.html" ><b>こちら</b></a>--></td>
+  </tr>
+  <tr> 
+    <td><img src="../4-w/image/8w_m30_01.gif"></td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr> 
+    <td><b>［LAN側静的ルーティング設定エントリ編集］</b></td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="540">
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>宛先IPアドレス</b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> ルーティング先のIPアドレスを指定します。<br>
+            設定可能範囲：ループバックアドレス（ 127.0.0.1 ～ 127.255.255.255 ）<br>
+            を除く0.0.0.0 ～255.255.255.255のネットワークアドレス </td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>ネットマスク</b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> ルーティング先のネットマスクを指定します。<br>
+	   設定可能数値：0、128、192、224、240、248、252、254、255<br>
+            ※マスク値が連続している必要があります。（連続しないマスク値の入力例：255.0.255.0）</td>
+        </tr>
+        <tr> 
+          <td>　</td>
+          <td>　</td>
+        </tr>
+        <tr> 
+          <td colspan="2"><img src="../image/msize_1.gif"> <font color="#00194b"><b>ゲートウェイ</b></font></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;&nbsp;</td>
+          <td> ルーティング先のゲートウェイのIPアドレスを指定します。<br>
+            設定可能範囲：ループバックアドレス（ 127.0.0.1 ～ 127.255.255.255 ）<br>
+            を除く1.0.0.0 ～223.255.255.255でLAN側またはPPPoEと同一ネットワークのアドレス </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr size="1" noshade>
+    </td>
+  </tr>
+  <tr> 
+    <td align="right"><a href="#top"> ↑ページのトップへ</a></td>
+  </tr>
+</TABLE>
+</BODY></HTML>

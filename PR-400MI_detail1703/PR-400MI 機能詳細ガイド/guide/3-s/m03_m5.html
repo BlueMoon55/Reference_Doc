@@ -1,0 +1,216 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Shift_JIS">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>PPPoEマルチセッション環境でサーバを公開するには</title>
+<link rel="stylesheet" href="../image/style.css" type="text/css">
+</head>
+<body text="black" vlink="#990099" alink="#339966" link="#3333cc" style="margin:5px 0 0 5px;">
+<table width="550" id="top">
+	<tr>
+		<td><TABLE width="550">
+				<tr>
+					<TD class="mojil2" bgcolor="#ffcee7"><B>PPPoEマルチセッション環境でサーバを公開するには</B></TD>
+				</tr>
+			</TABLE></td>
+	</tr>
+	<tr>
+		
+    <td> 通常のPPPoEマルチセッションの設定以外に、「詳細設定」-<b><a href="../4-w/8w_m101.html">「静的IPマスカレード設定」</a></b>と「基本設定」-<b><a href="../4-w/8w_m3.html">「接続先設定（IPv4 PPPoE）」</a></b>-［接続ルール設定］を設定することで、サーバを公開できます。 
+      下記にその方法について説明します。</td>
+	</tr>
+	<tr>
+		<td><hr size="1" noshade></td>
+	</tr>
+	<tr>
+		<td><b>■ 1箇所の接続先に対してサーバを公開する場合</b></td>
+	</tr>
+	<tr>
+		<td><img src="image/mlc-1.gif" width="500" height="234"></td>
+	</tr>
+	<tr>
+		<td> 下記の設定を行うことによって、サーバを公開できます。<br>
+      ・「詳細設定」-<b><a href="../4-w/8w_m101.html">「静的IPマスカレード設定」</a></b><br>
+			・「基本設定」-<b><a href="../4-w/8w_m3.html">「接続先設定（IPv4 PPPoE）」</a></b>-［接続ルール設定］<br>
+			<br></td>
+	</tr>
+	<tr>
+		<td> 　<b>【設定例：LAN側のWebサーバを［セッション2］に公開する場合】</b> <br>
+			<br></td>
+	</tr>
+	<TR>
+		
+    <TD> 　・「詳細設定」-<b><a href="../4-w/8w_m101.html">「静的IPマスカレード設定」</a></b></td>
+	</tr>
+	<tr>
+		<td><table border="0">
+				<TBODY>
+					<TR>
+						<td valign="top" width="15" align="right"></td>
+						<td width="370"><table border="1" cellpadding="2" cellspacing="0">
+								<tr>
+									
+                <td width="110" bgcolor="#ccffff">接続インタフェース</td>
+									<td width="232">［セッション2］</td>
+								</tr>
+								<tr>
+									<td bgcolor="#ccffff">変換対象プロトコル</td>
+									<td>TCP</td>
+								</tr>
+								<tr>
+									<td bgcolor="#ccffff">変換対象ポート</td>
+									
+                <td>80</td>
+								</tr>
+								<tr>
+									<td bgcolor="#ccffff">宛先アドレス</td>
+									<td>192.168.1.2(LAN側のWebサーバのIPアドレス)</td>
+								</tr>
+							</table></td>
+					</tr>
+				</tbody>
+			</table></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td> 　・「基本設定」-<b><a href="../4-w/8w_m3.html">「接続先設定（IPv4 PPPoE）」</a></b>-セッション2［接続ルール設定］</td>
+	</tr>
+	<tr>
+		<td><table border="0">
+				<TBODY>
+					<TR>
+						<td valign="top" width="15" align="right"></td>
+						<td width="370"><table border="1" cellpadding="2" cellspacing="0">
+								<tr>
+									<td width="110" bgcolor="#ccffff">送信元IPアドレス</td>
+									<td width="232">192.168.1.2(LAN側のWebサーバのIPアドレス)</td>
+								</tr>
+							</table></td>
+					</TR>
+				</tbody>
+			</table></TD>
+	</TR>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	<TR>
+		<TD><table border="0">
+				<TBODY>
+					<tr>
+						<td> 上記のような設定を行った場合には、［セッション2］(WAN側)と本商品内のWebサーバ(LAN側、IPアドレスは'192.168.1.2')は、
+							直接通信できます。<br>
+							ただし、このWebサーバ(LAN側、IPアドレスは'192.168.1.2')からは、［セッション2］宛ての通信しかできません。<br></td>
+					</tr>
+					<tr>
+						<TD><hr size="1" noshade></TD>
+					</tr>
+					<tr>
+						<td><b>■ 2箇所以上の接続先に対してサーバを公開する場合</b></td>
+					</tr>
+					<tr>
+						<td><img src="image/mlc-2.gif" width="500" height="297"></td>
+					</tr>
+					<tr>
+						<td> 下記の設定を行うことによって、サーバを公開できます。<br>
+            ・「詳細設定」-<b><a href="../4-w/8w_m101.html">「静的IPマスカレード設定」</a></b><br>
+							・「基本設定」-<b><a href="../4-w/8w_m3.html">「接続先設定（IPv4 PPPoE）」</a></b>-［接続ルール設定］<br>
+							<br></td>
+					</tr>
+					<tr>
+						<td> 　<b>【設定例：LAN側のWebサーバを［メインセッション］と［セッション2］に公開する場合】 </b><br>
+							<br></td>
+					</tr>
+					<tr>
+						<td><table border="0">
+								<TBODY>
+									<TR>
+										<td valign="top" colspan="2">・「基本設定」-<b><a href="../4-w/8w_m3.html">「接続先設定（IPv4 PPPoE）」</a></b>-「接続先の選択設定」</td>
+									</TR>
+									<TR>
+										<td valign="top" align="right" width="15"></td>
+										<TD width="521"><table border="1" cellpadding="2" cellspacing="0">
+												<tr>
+													<td bgcolor="#ccffff">接続可</td>
+													<td>［セッション2］</td>
+												</tr>
+											</table></TD>
+									</TR>
+									<TR>
+										
+                <td valign="top" colspan="2">・「詳細設定」-<b><a href="../4-w/8w_m101.html">「静的IPマスカレード設定」</a></b></td>
+									</TR>
+									<TR>
+										<td width="15"></td>
+										<TD width="521"><table border="1" cellpadding="2" cellspacing="0">
+												<tr>
+													
+                      <td bgcolor="#ccffff">接続インタフェース</td>
+													<td>［メインセッション］</td>
+													<td>［セッション2］</td>
+												</tr>
+												<tr>
+													<td bgcolor="#ccffff">変換対象プロトコル</td>
+													<td>TCP</td>
+													<td>TCP</td>
+												</tr>
+												<tr>
+													<td bgcolor="#ccffff">変換対象ポート</td>
+													
+                      <td>80</td>
+													
+                      <td>80</td>
+												</tr>
+												<tr>
+													<td bgcolor="#ccffff">宛先アドレス</td>
+													<td>192.168.1.2<br>
+														(LAN側のWebサーバのIPアドレス)</td>
+													<td>192.168.1.2<br>
+														(LAN側のWebサーバのIPアドレス)</td>
+												</tr>
+											</table></TD>
+									</TR>
+									<TR>
+										<td valign="top" colspan="2">　・「基本設定」-<b><a href="../4-w/8w_m3.html">「接続先設定（IPv4 PPPoE）」</a></b>-セッション2［接続ルール設定］</td>
+									</TR>
+									<TR>
+										<td width="15"></td>
+										<TD width="521"><table border="1" cellpadding="2" cellspacing="0">
+												<tr>
+													<td bgcolor="#ccffff">宛先IPアドレス</td>
+													<td>200.200.22.1/255.255.255.0</td>
+												</tr>
+											</table></td>
+									</TR>
+									<TR>
+										<td width="15"></td>
+										<TD width="521"> 上記のような設定を行った場合には、'200.200.22.0/24'のネットワークに属する端末からは、本商品内のWebサーバ(LAN側、IPアドレスは'192.168.1.2')と直接通信することが可能です。<br>
+											しかし、'200.200.22.0/24'のネットワーク以外のネットワークに属する端末とは、直接は通信できません。</TD>
+									</TR>
+								</TBODY>
+							</table></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td class="info"><b>＜お知らせ＞　－制限事項－</b>
+							<ul>
+								<li>LAN側からの送信時に「基本設定」-<b><a href="../4-w/8w_m3.html">「接続先設定（IPv4 PPPoE）」</a></b>-［接続ルール］でエントリされているものと一致しない場合は、メインセッション以外とは、通信できません。
+									また、「基本設定」-<b><a href="../4-w/8w_m3.html">「接続先設定（IPv4 PPPoE）」</a></b>-［接続ルール］でエントリを指定していない場合は、メインセッションと通信します。</li>
+							</ul></td>
+					</tr>
+					<tr>
+						<td><hr size="1" noshade></td>
+					</tr>
+					<tr>
+						<TD align="right"><a href="#top"> ↑ページのトップへ</a></TD>
+					</tr>
+				</TBODY>
+			</table></TD>
+	</TR>
+</table>
+</body>
+</html>

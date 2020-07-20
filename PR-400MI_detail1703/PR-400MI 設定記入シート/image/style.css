@@ -1,0 +1,12 @@
+.moji { font-size: 12px;}
+.mojis { font-size: 10px;}
+.mojil { font-size: 14px;}
+.mojil2 { font-size: 24px; font-weight:bold; }
+td {font-size: 12px;}
+th {font-size: 14px;}
+a:link { text-decoration: none;}
+a:active { text-decoration: none;}
+a:visited { text-decoration: none;}
+a:hover { color: #9933CC; text-decoration: underline;}
+
+.k-page {page-break-before: always;}

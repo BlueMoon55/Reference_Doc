@@ -1,0 +1,40 @@
+.moji { font-size: 12px;}
+.mojis { font-size: 10px;}
+.mojil { font-size: 14px;}
+.mojil-list { font-size: 12px; font-weight: bold;}
+.mojil-web { font-size: 14px; font-weight: bold; color: #b22222;}
+.mojil2 { font-size: 16px;}
+.mojil3 { font-size: 20px; font-weight: bold;}
+td {font-size: 12px;}
+th {font-size: 12px;}
+caption {font-size: 12px;}
+a:link { text-decoration: none;}
+a:active { text-decoration: none;}
+a:visited { text-decoration: none;}
+a:hover { color: #9933CC; text-decoration: underline;}
+
+.info { width: 550px; padding: 5px 8px 1px; font-size: 12px;
+ border:solid 1px #e9967a; background: #ffffcc; }
+
+.height-l{ line-height:11px;}
+
+table.border_blue,
+table.border_blue th,
+table.border_blue td{
+	border:1px solid #30f;
+}
+
+table.border_gray,
+table.border_gray th,
+table.border_gray td{
+	border:1px solid #999;
+}
+
+table.border_gray table,
+table.border_gray table th,
+table.border_gray table td,
+table.border_blue table,
+table.border_blue table td,
+table.border_blue table th{
+	border:none;
+}
